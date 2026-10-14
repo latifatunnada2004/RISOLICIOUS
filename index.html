@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risolicious - Risol Mayones Lezat</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gaya.css">
 </head>
 <body>
 
@@ -23,6 +23,7 @@
     </header>
 
     <main>
+        <!-- BERANDA -->
         <section class="hero" id="beranda">
             <div class="hero-content">
                 <p class="tagline">Camilan Favorit Semua Orang</p>
@@ -35,11 +36,11 @@
             </div>
 
             <div class="hero-image">
-                <img src="banner.jpeg"
-                >
+                <img src="banner.jpeg" alt="Risol Mayones Risolicious">
             </div>
         </section>
 
+        <!-- PRODUK -->
         <section class="products section" id="produk">
             <div class="section-heading">
                 <p class="tagline">Menu Pilihan</p>
@@ -47,22 +48,85 @@
                 <p>Pilih camilan favoritmu dan nikmati kelezatannya!</p>
             </div>
 
-            <div class="product-grid" id="product-list"></div>
+            <div class="product-grid">
+
+                <!-- PRODUK 1 -->
+                <div class="product-card">
+                    <img src="asli.jpeg"
+                         alt="Risol Mayo Original"
+                         class="product-image">
+
+                    <div class="product-info">
+                        <h3>Risol Mayo Original</h3>
+                        <p>Risol gurih dengan isian mayones,
+                           telur, dan smoked beef.</p>
+                        <p class="price">Rp3.000</p>
+
+                        <button class="btn add-to-cart"
+                                data-id="1">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUK 2 -->
+                <div class="product-card">
+                    <img src="keju.jpeg"
+                         alt="Risol Mayo Keju"
+                         class="product-image">
+
+                    <div class="product-info">
+                        <h3>Risol Mayo Keju</h3>
+                        <p>Perpaduan mayones creamy
+                           dengan keju yang lezat.</p>
+                        <p class="price">Rp3.500</p>
+
+                        <button class="btn add-to-cart"
+                                data-id="2">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUK 3 -->
+                <div class="product-card">
+                    <img src="spesial.jpeg"
+                         alt="Risol Mayo Spesial"
+                         class="product-image">
+
+                    <div class="product-info">
+                        <h3>Risol Mayo Spesial</h3>
+                        <p>Risol mayo spesial dengan
+                           isian yang menggugah selera.</p>
+                        <p class="price">Rp4.000</p>
+
+                        <button class="btn add-to-cart"
+                                data-id="3">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
+        <!-- TENTANG KAMI -->
         <section class="about section" id="tentang">
             <h2>Mengapa Risolicious?</h2>
+
             <div class="features">
                 <div class="feature">
                     <span>🥚</span>
                     <h3>Isian Melimpah</h3>
                     <p>Perpaduan mayones, telur, smoked beef, dan keju.</p>
                 </div>
+
                 <div class="feature">
                     <span>🥟</span>
                     <h3>Renyah dan Lezat</h3>
                     <p>Camilan gurih yang cocok untuk segala suasana.</p>
                 </div>
+
                 <div class="feature">
                     <span>📦</span>
                     <h3>Praktis Dipesan</h3>
@@ -71,9 +135,11 @@
             </div>
         </section>
 
+        <!-- KERANJANG -->
         <section class="cart-section section" id="keranjang">
             <div class="cart-box">
                 <h2>🛒 Keranjang Belanja</h2>
+
                 <div id="cart-items">
                     <p class="empty-cart">Keranjang masih kosong.</p>
                 </div>
@@ -84,18 +150,14 @@
                 </div>
 
                 <label for="customer-name">Nama Pemesan</label>
-                <input
-                    type="text"
-                    id="customer-name"
-                    placeholder="Masukkan nama kamu"
-                >
+                <input type="text"
+                       id="customer-name"
+                       placeholder="Masukkan nama kamu">
 
                 <label for="customer-address">Alamat Pengiriman</label>
-                <textarea
-                    id="customer-address"
-                    placeholder="Masukkan alamat pengiriman"
-                    rows="3"
-                ></textarea>
+                <textarea id="customer-address"
+                          placeholder="Masukkan alamat pengiriman"
+                          rows="3"></textarea>
 
                 <button id="checkout-btn" class="btn checkout-btn">
                     Pesan via WhatsApp
