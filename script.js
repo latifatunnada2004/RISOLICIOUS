@@ -6,21 +6,21 @@ const products = [
         name: "Risol Mayo Original",
         price: 3000,
         description: "Risol gurih dengan isian mayones, telur, dan smoked beef.",
-        image: "img/original.JPEG"
+        image: "original.JPEG"
     },
     {
         id: 2,
         name: "Risol Mayo Keju",
         price: 3500,
         description: "Perpaduan mayones creamy dengan keju yang lezat.",
-        image: "img/keju.JPEG"
+        image: "keju.JPEG"
     },
     {
         id: 3,
         name: "Risol Mayo Spesial",
         price: 4000,
         description: "Isian melimpah dengan smoked beef, telur, mayones, dan keju.",
-        image: "img/spesial.JPEG"
+        image: "spesial.JPEG"
     }
 ];
 
