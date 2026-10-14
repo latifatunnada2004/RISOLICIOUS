@@ -6,7 +6,7 @@ const products = [
         name: "Risol Mayo Original",
         price: 3000,
         description: "Risol gurih dengan isian mayones, telur, dan smoked beef.",
-        image: "original.jpeg"
+        image src: "original.jpeg"
     },
     {
         id: 2,
